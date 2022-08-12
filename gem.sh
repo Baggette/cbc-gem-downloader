@@ -11,7 +11,7 @@ if [ $? -ne 0 ]
             echo "please re run the script to contine"
         else
             echo    "You have yt-dlp, contining..."
-            echo "Please enter the browser to provide cookies from (optionally add the profile using <browser>:<profile>)..."
+            echo "Please enter the browser to provide cookies from (optionally add the profile using <browser>:<profile>, you also need to be signed into cbc gem within the specified browser)..."
             read browser
             echo "Please enter your email for cbc gem..."
             read email
