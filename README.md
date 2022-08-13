@@ -1,4 +1,5 @@
 # cbc-gem-downloader
-A primitve script to make downloading stuff from gem.cbc.ca easier.
-it should install the required dependancies.
-tested on ubuntu, more oses when I can figure it out
+A script made in python to download cbc gem content. <br>
+You must edit example.env with the appropriate details and rename the file to .env<br>
+Run pip install -r requirements.txt.<br>
+run python gem.py and input the desired url and you should be set!!!!
