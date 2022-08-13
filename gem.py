@@ -12,8 +12,16 @@ ydl_opts = {
     "format":'bestvideo[height<=' + str(os.getenv("VIDEO_HEIGHT")) + ']+bestaudio',
     "paths":{"home": os.getenv("OUTPUT_FOLDER")}
 }
-print("Please enter the url to download from (You have to be signed into cbc gem):")
-with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    URL = input()
-    info = ydl.extract_info(URL, download=False)
-    ydl.download(URL)
+while True:
+    print("Please enter the url to download from (You have to be signed into cbc gem):")
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        URL = input()
+        info = ydl.extract_info(URL, download=False)
+        ydl.download(URL)
+        print("All files finished successfully!")
+        dl_check = input("Would you like to download more files from cbc gem? y/n \n")
+        if dl_check == "y" :
+            continue
+        else:
+            print("Thanks for using my script! \n Bye")
+            exit()
