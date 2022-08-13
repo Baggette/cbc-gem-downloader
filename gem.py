@@ -13,10 +13,8 @@ ydl_opts = {
     "paths":{"home": os.getenv("OUTPUT_FOLDER")}
 }
 while True:
-    print("Please enter the url to download from (You have to be signed into cbc gem):")
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        URL = input()
-        info = ydl.extract_info(URL, download=False)
+        URL = input("Please enter the url to download from (You have to be signed into cbc gem): \n")
         ydl.download(URL)
         print("All files finished successfully!")
         dl_check = input("Would you like to download more files from cbc gem? y/n \n")
