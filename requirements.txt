@@ -1,0 +1,4 @@
+ffmpeg
+yt-dlp
+brotli
+python-dotenv
