@@ -21,5 +21,5 @@ while True:
         if dl_check == "y" :
             continue
         else:
-            print("Thanks for using my script! \n Bye")
+            print("Thanks for using my script! \nBye")
             exit()
