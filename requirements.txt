@@ -1,4 +1,4 @@
-ffmpeg
+ffmpeg-python
 yt-dlp
 brotli
 python-dotenv
