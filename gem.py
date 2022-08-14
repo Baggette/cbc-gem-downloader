@@ -7,7 +7,7 @@ ydl_opts = {
     "username": os.getenv("EMAIL"),
     "password": os.getenv("PASSWORD"),
     "overwrites": os.getenv("OVERWRITES"),
-    "cookies-from-browser": os.getenv("BROWSER"),
+   #"cookies-from-browser": os.getenv("BROWSER"),
     "final_ext":"mp4",
     "format":'bestvideo[height<=' + str(os.getenv("VIDEO_HEIGHT")) + ']+bestaudio',
     "paths":{"home": os.getenv("OUTPUT_FOLDER")}
